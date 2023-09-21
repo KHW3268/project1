@@ -14,8 +14,8 @@ int main() {
     character1.pickUpWeapon(&knife, character2);
     character2.pickUpWeapon(&gun, character1);
 
-    while (character1.hp > 0 && character2.hp > 0) {
-        character1.attack(character2, &knife); // 여기를 수정했습니다.
+    while (character1.hp > 0 && character2.hp > 0, knife.attackCount > 0 && gun.attackCount > 0) {
+        character1.attack(character2, &knife); 
         if (character2.hp <= 0) {
             std::cout << "character2가 승리했습니다!" << std::endl;
             break;
