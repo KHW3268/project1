@@ -3,8 +3,8 @@
 #include "weapon.h"
 #include "Knife.h"
 
-Knife::Knife() : Weapon("Ä®", 5, 3) {};
+Knife::Knife() : Weapon("Ä®", 5, 20000) {};
 
-void Weapon::attack() {
+void Knife::attack() {
     std::cout << "Âî¸£±â" << std::endl;
 }

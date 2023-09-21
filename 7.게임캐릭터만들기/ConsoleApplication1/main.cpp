@@ -5,18 +5,28 @@
 #include "Weapon.h"
 
 int main() {
-    Character character1(100, 1);
-    Character character2(100, 1);
+    Character character1("character1", 100, 1);
+    Character character2("character2", 100, 1);
 
     Knife knife;
     Gun gun;
 
-    character1.pickUpWeapon(&knife);
-    character2.pickUpWeapon(&gun);
+    character1.pickUpWeapon(&knife, character2);
+    character2.pickUpWeapon(&gun, character1);
 
+    while (character1.hp > 0 && character2.hp > 0) {
+        character1.attack(character2, &knife); // 여기를 수정했습니다.
+        if (character2.hp <= 0) {
+            std::cout << "character2가 승리했습니다!" << std::endl;
+            break;
+        }
 
-    character1.attack(character2, &knife);
-    character2.attack(character1, &gun);
+        character2.attack(character1, &gun);
+        if (character1.hp <= 0) {
+            std::cout << "character1이 승리했습니다!" << std::endl;
+            break;
+        }
+    }
 
     return 0;
 }

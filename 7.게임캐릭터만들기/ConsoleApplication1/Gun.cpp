@@ -4,8 +4,8 @@
 #include "Gun.h"
 
 
-Gun::Gun() : Weapon("ÃÑ", 10, 1) {};
+Gun::Gun() : Weapon("ÃÑ", 10, 20000) {};
 
-void Weapon::attack() {
+void Gun::attack() {
     std::cout << "ÃÑ½î±â" << std::endl;
 }

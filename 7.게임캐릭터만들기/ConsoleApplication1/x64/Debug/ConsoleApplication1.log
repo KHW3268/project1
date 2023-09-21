@@ -1,7 +1,2 @@
-﻿  ConsoleApplication1.cpp
-  main.cpp
-  코드를 생성하고 있습니다...
-Knife.obj : error LNK2005: "public: virtual void __cdecl Weapon::attack(void)" (?attack@Weapon@@UEAAXXZ)이(가) Gun.obj에 이미 정의되어 있습니다.
-Gun.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl Gun::attack(void)" (?attack@Gun@@UEAAXXZ)
-Knife.obj : error LNK2001: 확인할 수 없는 외부 기호 "public: virtual void __cdecl Knife::attack(void)" (?attack@Knife@@UEAAXXZ)
-C:\Users\kjs76\OneDrive\바탕 화면\코딩\프로젝트\7.게임캐릭터만들기\x64\Debug\ConsoleApplication1.exe : fatal error LNK1120: 2개의 확인할 수 없는 외부 참조입니다.
+﻿  main.cpp
+  ConsoleApplication1.vcxproj -> C:\Users\kjs76\OneDrive\바탕 화면\코딩\프로젝트\7.게임캐릭터만들기\x64\Debug\ConsoleApplication1.exe
